@@ -15,7 +15,6 @@ const Home = ({ topics }) => {
 
     return (
         <div className="min-h-screen bg-gray-100 text-gray-900">
-            {/* Hero Section - Responsive Height */}
             <div className="relative">
                 <img
                     src="/overview.jpg"
@@ -36,7 +35,7 @@ const Home = ({ topics }) => {
                 </div>
             </div>
 
-            {/* Topics Section */}
+            {/* Topics */}
             <div className="container mx-auto px-4 py-8 md:py-12">
                 <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4 md:mb-8">
                     Featured Topics
@@ -80,7 +79,7 @@ const Home = ({ topics }) => {
                     ))}
                 </div>
 
-                {/* Additional Section */}
+                {/* Additional */}
                 <div className="mt-12 bg-white rounded-lg shadow-md p-6 md:p-8">
                     <h3 className="text-xl md:text-2xl font-bold text-center mb-4">
                         About My Project
