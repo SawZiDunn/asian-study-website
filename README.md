@@ -1,6 +1,6 @@
 # Website for Asian Studies Class
 
-Welcome to my educational website built for an Asian Studies class, focusing exclusively on Saudi Arabia—one of Asia's fascinating countries.
+This educational website is built for an Asian Studies class, focusing exclusively on Saudi Arabia—one of Asia's fascinating countries.
 This project combines all my video presentations into an interactive, user-friendly platform, showcasing Saudi Arabia’s rich culture, history, and modern developments.
 Developed using **React** and styled with **Tailwind CSS**, it’s designed to be both functional, visually appealing, and mobile responsive.
 

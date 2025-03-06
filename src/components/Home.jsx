@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Home = ({ topics }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const topics_div = useRef();
+
+    const scrollView = () => {
+        // Scroll to the element smoothly
+        topics_div.current.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
 
     useEffect(() => {
         const handleResize = () => {
@@ -29,14 +38,20 @@ const Home = ({ topics }) => {
                         Explore the history, culture, and beauty of Saudi Arabia
                         through these video presentations.
                     </p>
-                    <button className="mt-4 md:mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                    <button
+                        className="mt-4 md:mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-full transition-all duration-300 transform hover:scale-105"
+                        onClick={scrollView}
+                    >
                         Start Exploring
                     </button>
                 </div>
             </div>
 
             {/* Topics */}
-            <div className="container mx-auto px-4 py-8 md:py-12">
+            <div
+                className="container mx-auto px-4 py-8 md:py-12"
+                ref={topics_div}
+            >
                 <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4 md:mb-8">
                     Featured Topics
                 </h2>
